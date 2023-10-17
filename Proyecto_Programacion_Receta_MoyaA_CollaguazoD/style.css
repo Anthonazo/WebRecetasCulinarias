@@ -1,3 +1,4 @@
+/* Reset de estilos y ajustes generales */
 body, h1, ul, li {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Encabezado */
 .header-container {
     background-color: #e8e8e8;
     display: flex;
@@ -35,10 +37,12 @@ body {
 }
 
 .users-icon {
+    /* Agrega estilos de icono de usuario */
     font-size: 24px;
     color: #000;
 }
 
+/* Barra de búsqueda con animación */
 .list-research-menu {
     display: flex;
     align-items: center;
@@ -54,18 +58,23 @@ body {
     border: none;
     border-bottom: 2px solid #8b4513;
     outline: none;
-    padding: 5px;
+    padding: 0px;
     font-size: 16px;
     transition: width 0.3s;
     width: 0;
     background-color: transparent;
 }
 
-.researcher:hover input[type="text"],
-.researcher input[type="text"]:focus {
-    width: 250px; 
+.researcher-into{
+    border-bottom: none;
 }
 
+.researcher:hover input[type="text"],
+.researcher input[type="text"]:focus {
+    width: 250px; /* Ancho deseado */
+}
+
+/* Navegación */
 .container-nav {
     display: flex;
     justify-content: space-between;
@@ -86,6 +95,7 @@ body {
     color: #000;
 }
 
+/* Media bar */
 .media-bar-container {
     display: flex;
     align-items: center;
@@ -104,11 +114,3 @@ body {
     color: #000;
 }
 
-.users-icon,
-research-icon,
-ig-icon,
-fb-icon,
-yt-icon {
-    font-size: 32px; 
-    margin-top: 10px; 
-}
