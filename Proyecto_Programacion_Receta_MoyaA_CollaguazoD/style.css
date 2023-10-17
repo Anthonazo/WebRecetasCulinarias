@@ -1,0 +1,74 @@
+.list-research-menu,
+.users {
+    list-style: none;
+}
+
+.research-left-container{
+    position: relative; /* El div se posiciona de manera absoluta dentro del contenedor */
+    top: 0; /* Lo ubicamos en la parte superior */
+    left: 0; /* Lo ubicamos en la parte izquierda */
+    width: max-content; /* Establece un ancho para el div (ajusta según tus necesidades) */
+    height: min-content; /* Establece una altura para el div (ajusta según tus necesidades) */
+    background-color: red; /* Opcional: Establece un color de fondo para el div */
+  }  
+  
+
+.header-container {
+    background-color: beige;
+    display: flex;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+
+.instagram,
+.researcher,
+.user {
+    color: black;
+}
+
+.social-container {
+    text-align: end;
+    padding: 20px;
+}
+
+.title-center-container {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+    .black{
+        color: black;
+        font-size: 35px;
+    }
+    .brown{
+        color: rgb(215, 135, 14);
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+    }
+
+
+}
+
+.title-container {
+    margin-right: 20px;
+    /* Ajusta el margen derecho según tus necesidades */
+}
+
+.user-rigth-container {
+    /* Puedes ajustar el margen derecho para que coincida con el title-container */
+    margin-right: 20px;
+    /* Ajusta el margen derecho según tus necesidades */
+    position: absolute;
+    /* Posición absoluta */
+    top: 0;
+    /* Arriba de su contenedor principal */
+    right: 0;
+    /* A la derecha de su contenedor principal */
+
+
+
+}
