@@ -1,7 +1,7 @@
 
 /* Encabezado */
 .nav-bar {
-    background-color: #e8e8e8;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    border-bottom: 2px solid rgb(0, 0, 0); 
 }
 .main {
     display: flex;
@@ -36,12 +37,10 @@
 }
 
 .users-icon {
-    /* Agrega estilos de icono de usuario */
     font-size: 24px;
     color: #000;
 }
 
-/* Barra de búsqueda con animación */
 .list-research-menu {
     display: flex;
     align-items: center;
@@ -75,7 +74,6 @@
     width: 150px; /* Ancho deseado */
 }
 
-/* Navegación */
 .container-nav {
     display: flex;
     flex-direction: row;
@@ -119,4 +117,35 @@
     text-decoration: none;
     color: #000;
 }
+/* Estilos para la sección "about-container" */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 
+  }
+  
+  /* Estilos para la sección "about" */
+  .about {
+    text-align: right;
+    width: 50%;
+  }
+
+  
+  /* Estilos para la imagen en "photo-about-us" */
+  .photo-about-us {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+
+  }
+
+  .photo-about-us img{
+    width: 95%;  
+  }
+  
+  /* Estilos para la sección "join-our-team" */
+
+  
