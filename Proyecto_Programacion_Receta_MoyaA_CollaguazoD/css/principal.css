@@ -7,7 +7,12 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.fond-container {
+.carrusel-container {
+    overflow: hidden;
+    height: 420px;
+    padding-top: 70px;
+}
+#id-fond1, #id-fond2, #id-fond3, #id-fond4{
     background-image: url(/imagenes/cuy.jpg);
     background-position: center;
     background-size: cover;
@@ -16,8 +21,30 @@
     text-align: center;
     color: rgb(213, 241, 241);
     width: 100%;
-    height: 350px;
+    height: 420px;
     margin-bottom: 25px;
+    padding-top: 70px;
+}
+
+#id-fond2{
+    background-image: url(/imagenes/fond-bandeja-paisa.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#id-fond3{
+    background-image: url(/imagenes/fond-mate.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#id-fond4{
+    background-image: url(/imagenes/fond-tortilla.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fond-container {
