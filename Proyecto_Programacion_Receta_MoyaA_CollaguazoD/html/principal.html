@@ -45,7 +45,7 @@
     </nav>
     </div>
     <div class="fond-container">
-        <img src="./icons/arrow-left-circle.svg" alt="arrow-left">
+        <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
         <div class="fond-text-container">
             <p>Cuenca</p>
             <h1>Cuy asado con papas</h1>
@@ -97,6 +97,33 @@
             <h1>Espagueti con albóndigas de carne</h1>
             <p>Plato principal</p>
         </div>
+    </div>
+
+    <div class="form-container">
+        <div class="uno">
+            <h1>Envía <br> tu <br> receta</h1>
+            <p>En el siguiente espacio tu puedes crear una receta para ser publicada en el sitio web
+                recuerda colocar todos los ingredientes como todos los pasos y una imagen preview de
+                tu platillo.
+                <p>¡Es tu hora de mostrarnos tus platillos favoritos!</p> 
+            </p>
+        </div>
+        <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre de la Receta:</label>
+            <input type="text" id="nombre" name="nombre" required class="input-name">
+
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" rows="4" required class="area-ingredientes"></textarea>
+
+            <label for="preparacion">Instrucciones de Preparación:</label>
+            <textarea id="preparacion" name="preparacion" rows="4" required class="area-preparacion"></textarea>
+
+            <label for="imagen">Imagen de la Receta:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+
+            <input type="submit" value="Enviar Receta" class="summit-enviar">
+        </form>
+    
     </div>
 
     <footer>

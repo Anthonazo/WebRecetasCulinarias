@@ -86,9 +86,16 @@
 .container-nav a {
     text-decoration: none;
     color: #000;
-    margin: 20px;
+    margin: 13px;
     align-self: center;
+    padding: 9px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
 }
+.container-nav a:hover {
+            border: 1px solid rgba(158, 157, 157, 0.747);
+            color: rgba(158, 157, 157, 0.747);
+        }
 
 /* Media bar */
 .media-bar-container {
