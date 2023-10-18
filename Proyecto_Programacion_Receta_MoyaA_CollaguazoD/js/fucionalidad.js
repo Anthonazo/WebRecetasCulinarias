@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Restablecer el formulario
         recetaForm.reset();
+        
     });
 
     // Mostrar las recetas almacenadas en el Local Storage

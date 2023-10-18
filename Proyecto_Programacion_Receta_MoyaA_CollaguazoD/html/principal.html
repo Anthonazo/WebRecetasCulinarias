@@ -22,7 +22,7 @@
                 <img src="/imagenes/logo.jpg" alt="logo">
                 <div class="title-center-container">
                     <h1 class="title-container">
-                        <span class="black">Recetario</span>
+                        <span class="black" id="title">Recetario</span>
                     </h1>
                 </div>
                 <!-- <div class="user-rigth-container">
@@ -32,9 +32,9 @@
             </div> -->
             </section>
             <div class="container-nav">
-                <a href="#" class="main">Inicio</a>
-                <a href="#" class="recipes">Recetas</a>
-                <a href="#" class="about">Sobre nosotros</a>
+                <a href="#id-fond1" class="main">Inicio</a>
+                <a href="#recipes-title" class="recipes">Recetas</a>
+                <a href="#about-title" class="about">Sobre nosotros</a>
                 <div class="buscar">
                     <div class="research-left-container">
                         <a href="javascript:void(0);" class="researcher" style="border: none;">
@@ -46,7 +46,7 @@
             </div>
         </nav>
     </div>
-    <div class="carrusel-container">
+    <div class="carrusel-container" >
         <div class="fond-container" id="id-fond1">
             <a href="#id-fond4">
                 <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
@@ -115,12 +115,12 @@
     </div>
 
     <div class="title-init" id="recipes-id">
-        <h1>Recetas</h1>
+        <h1 id="recipes-title">Recetas</h1>
     </div>
     <div class="recipes-container">
 
         <div class="recipe">
-            <a href="/html/seco-pollo-recipe.html">
+            <a href="">
                 <img src="/imagenes/img-recipes/seco-pollo.jpg" alt="sec-pollo-img">
                 <h1>Seco de Pollo</h1>
                 <p>plato principal</p>
@@ -207,7 +207,7 @@
                 alt="">
         </div>
         <div class="about">
-            <h2 class="about-title">Sobre <br> nosotros</h2>
+            <h2 id="about-title">Sobre <br> nosotros</h2>
             <p class="about-pg">
                 Los recetarios son de suma importancia para compartir conocimientos de cocina con futuras generaciones.
                 <br>
@@ -233,9 +233,12 @@
           </div>
           <div id="searchResults" class="search-results"></div>
     </section>
--->>
+-->
     <footer>
         <div class="media-bar-container">
+            <div class="text">
+                <p>Sigenos en nuestras redes</p>
+            </div>
             <ul class="media-bar">
                 <li><a target="_blank" href="https://www.instagram.com/" class="link-ig"><i
                             class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
@@ -248,6 +251,6 @@
     </footer>
 </body>
 <script src="/js/fucionalidad.js"></script>
-<script src="/js/logic-nav.js"></script>
-
+<!--<script src="/js/watch-recipes.js"></script>
+-->
 </html>
