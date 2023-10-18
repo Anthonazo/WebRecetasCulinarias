@@ -56,3 +56,46 @@ document.addEventListener("DOMContentLoaded", function () {
         recetasContainer.appendChild(recetaCard);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.querySelector(".research-left-container input");
+    const searchResults = document.querySelector(".recipes-container");
+
+    // Define las recetas existentes en tu página
+    const recetasHTML = Array.from(document.querySelectorAll(".recipe")).map((recipeElement) => {
+        const nombre = recipeElement.querySelector("h1").textContent;
+        const tipo = recipeElement.querySelector("p").textContent;
+        const imagen = recipeElement.querySelector("img").getAttribute("src");
+        return { nombre, tipo, imagen };
+    });
+
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+
+        // Filtra las recetas que coinciden con la búsqueda
+        const matchingRecipes = recetasHTML.filter((receta) =>
+            receta.nombre.toLowerCase().includes(query)
+        );
+
+        // Muestra las recetas coincidentes en el HTML
+        displayResults(matchingRecipes);
+    });
+
+    function displayResults(results) {
+        searchResults.innerHTML = ""; // Limpia los resultados anteriores
+        if (results.length === 0) {
+            searchResults.innerHTML = "<p>No se encontraron recetas.</p>";
+        } else {
+            results.forEach((receta) => {
+                const recipeHTML = `
+                <div class="recipe">
+                    <img src="${receta.imagen}" alt="${receta.nombre}"/>
+                    <h1>${receta.nombre}</h1>
+                    <p>${receta.tipo}</p>
+                </div>
+                `;
+                searchResults.insertAdjacentHTML("beforeend", recipeHTML);
+            });
+        }
+    }
+});

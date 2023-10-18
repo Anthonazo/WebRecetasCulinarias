@@ -90,6 +90,11 @@
     align-items: center;
 }
 
+.recipes-container a {
+    text-decoration: none;
+    color: black;
+}
+
 .recipes-container .recipe {
     display: flex;
     flex-direction: column;
