@@ -10,100 +10,200 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/4b13e3ec9a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <section class="main">
-            <img src="/imagenes/logo.jpg" alt="logo">
-            <div class="title-center-container">
-                <h1 class="title-container">
-                    <span class="black">Recetario</span>
-                </h1>
-            </div>
-            <!-- <div class="user-rigth-container">
+    <div>
+        <nav class="nav-bar">
+            <section class="main">
+                <img src="/imagenes/logo.jpg" alt="logo">
+                <div class="title-center-container">
+                    <h1 class="title-container">
+                        <span class="black">Recetario</span>
+                    </h1>
+                </div>
+                <!-- <div class="user-rigth-container">
                 <ul class="users">
                     <li><a href="#" class="user"><i class="fa-solid fa-user" style="color: #000000;"></i></a></li>
                 </ul>
             </div> -->
-        </section>
-        <div class="container-nav">
-            <a href="#" class="main">Inicio</a>
-            <a href="#" class="recipes">Recetas</a>
-            <a href="#" class="about">Sobre nosotros</a>
-            <div class="buscar">
-                <div class="research-left-container">
-                    <a href="#" class="researcher" style="border: none;">
-                        <input type="text" placeholder="Buscar receta">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                    </a>
+            </section>
+            <div class="container-nav">
+                <a href="#" class="main">Inicio</a>
+                <a href="#" class="recipes">Recetas</a>
+                <a href="#" class="about">Sobre nosotros</a>
+                <div class="buscar">
+                    <div class="research-left-container">
+                        <a href="javascript:void(0);" class="researcher" style="border: none;">
+                            <input type="text" placeholder="Buscar receta">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </div>
-    <div class="fond-container">
-        <img src="./icons/arrow-left-circle.svg" alt="arrow-left">
-        <div class="fond-text-container">
-            <p>Cuenca</p>
-            <h1>Cuy asado con papas</h1>
-            <p>El cuy con papas es una comida típica de la ciudad de Cuenca en Ecuador. Este platillo se lo consume
-                mucho por la población, siendo asi la domesticación de este animal hasta su consumo. Es simple de
-                preparar
-                y cuenta con una exquisitez emblemática.
-            </p>
+    <div class="carrusel-container">
+        <div class="fond-container" id="id-fond1">
+            <a href="#id-fond4">
+                <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
+            </a>
+            <div class="fond-text-container">
+                <p>Cuenca-Ecuador</p>
+                <h1>Cuy asado con papas</h1>
+                <p>El cuy con papas es una comida típica de la ciudad de Cuenca en Ecuador. Este platillo se lo consume
+                    mucho por la población, siendo asi la domesticación de este animal hasta su consumo. Es simple de
+                    preparar
+                    y cuenta con una exquisitez emblemática.
+                </p>
+            </div>
+            <a href="#id-fond2">
+                <img src="/icons/arrow-right-circle.svg" alt="arrow-right">
+            </a>
         </div>
-        <img src="/icons/arrow-right-circle.svg" alt="arrow-right">
+        <div class="fond-container" id="id-fond2">
+            <a href="#id-fond1">
+                <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
+            </a>
+            <div class="fond-text-container">
+                <p>Antioquia-Colombia</p>
+                <h1>Bandeja Paisa</h1>
+                <p>La bandeja Paisa es uno de los platillos mas representativos de Colombia,
+                    su variedad de sabores la hace una comida sin igual. Es un plato compuesto por arroz,
+                    frijol, carne freída, plátano, y acompañado con arepa.
+                </p>
+            </div>
+            <a href="#id-fond3">
+                <img src="/icons/arrow-right-circle.svg" alt="arrow-right">
+            </a>
+        </div>
+        <div class="fond-container" id="id-fond3">
+            <a href="#id-fond2">
+                <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
+            </a>
+            <div class="fond-text-container">
+                <p>Argentina</p>
+                <h1>Mate</h1>
+                <p>El mate es una bebida tradicional en el sur de Latinoamérica, principalmente en Argentina.
+                    Este es elaborado con hojas de yerba de mate y agua caliente. Ademas de tener un sabor
+                    característico, tiene propiedades estimulantes y de respeto hacia los demás.
+                </p>
+            </div>
+            <a href="#id-fond4">
+                <img src="/icons/arrow-right-circle.svg" alt="arrow-right">
+            </a>
+        </div>
+        <div class="fond-container" id="id-fond4">
+            <a href="#id-fond3">
+                <img src="/icons/arrow-left-circle.svg" alt="arrow-left">
+            </a>
+            <div class="fond-text-container">
+                <p>Extremadura-España</p>
+                <h1>Tortilla de patata</h1>
+                <p>La tortilla de patata es una de las comidas tradicionales de la mesa Española. Es muy
+                    popular en España, pues su simple preparación la cual cosiste en huevo, sal, papas y aceite
+                    la hacen accesible para todos.
+                </p>
+            </div>
+            <a href="#id-fond1">
+                <img src="/icons/arrow-right-circle.svg" alt="arrow-right">
+            </a>
+        </div>
     </div>
-    <div class="title-init">
+
+    <div class="title-init" id="recipes-id">
         <h1>Recetas</h1>
     </div>
     <div class="recipes-container">
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/sec-pollo.jpeg" alt="seco-pollo-img">
-            <h1>Seco de Pollo</h1>
-            <p>plato principal</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/seco-pollo.jpg" alt="sec-pollo-img">
+                <h1>Seco de Pollo</h1>
+                <p>plato principal</p>
+            </a>
+
         </div>
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/pollo-chan.jpeg" alt="pollo-chan-img">
-            <h1>Pollo con Champiñones</h1>
-            <p>Plato principal</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/pollo-chan.jpeg" alt="pollo-chan-img">
+                <h1>Pollo con Champiñones</h1>
+                <p>Plato principal</p>
+            </a>
         </div>
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/casuela-pollo.jpg" alt="casuela-pollo-img">
-            <h1>Cazuela de Pollo</h1>
-            <p>Plato secundario</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/casuela-pollo.jpg" alt="casuela-pollo-img">
+                <h1>Cazuela de Pollo</h1>
+                <p>Plato secundario</p>
+            </a>
         </div>
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/solomillo-cerdo.jpg" alt="seco-pollo-img">
-            <h1>Solomillo de Cerdo</h1>
-            <p>Plato principal</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/solomillo-cerdo.jpg" alt="solomillo-cerdo-img">
+                <h1>Solomillo de Cerdo</h1>
+                <p>Plato principal</p>
+            </a>
         </div>
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/carne-papas.jpeg" alt="carne-papas-img">
-            <h1>Carne al horno con papas</h1>
-            <p>Plato principal</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/carne-papas.jpeg" alt="carne-papas-img">
+                <h1>Carne al horno con papas</h1>
+                <p>Plato principal</p>
+            </a>
         </div>
 
         <div class="recipe">
-            <img src="/imagenes/img-recipes/albondigas-fideo.jpeg" alt="albondigas-fideo-img">
-            <h1>Espagueti con albóndigas de carne</h1>
-            <p>Plato principal</p>
+            <a href="/html/seco-pollo-recipe.html">
+                <img src="/imagenes/img-recipes/albondigas-fideo.jpeg" alt="albondigas-fideo-img">
+                <h1>Espagueti con albóndigas de carne</h1>
+                <p>Plato principal</p>
+            </a>
         </div>
+
+        <div class="button-more">
+            <input type="submit" value="Ver mas" class="summit-more">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="uno">
+            <h1>Envía <br> tu <br> receta</h1>
+            <p>En el siguiente espacio tu puedes crear una receta para ser publicada en el sitio web
+                recuerda colocar todos los ingredientes como todos los pasos y una imagen preview de
+                tu platillo.
+            <p>¡Es tu hora de mostrarnos tus platillos favoritos!</p>
+            </p>
+        </div>
+        <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre de la Receta:</label>
+            <input type="text" id="nombre" name="nombre" required class="input-name">
+
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" rows="4" required class="area-ingredientes"></textarea>
+
+            <label for="preparacion">Instrucciones de Preparación:</label>
+            <textarea id="preparacion" name="preparacion" rows="4" required class="area-preparacion"></textarea>
+
+            <label for="imagen">Imagen de la Receta:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+
+            <input type="submit" value="Enviar Receta" class="summit-enviar">
+        </form>
+
     </div>
 
     <section class="about-container">
 
         <div class="photo-about-us">
-            <img class="our-photo"
-                src="/imagenes/depositphotos_51933801-stock-photo-labrador-puppies-in-a-basket.jpg"
+            <img class="our-photo" src="/imagenes/depositphotos_51933801-stock-photo-labrador-puppies-in-a-basket.jpg"
                 alt="">
         </div>
         <div class="about">
@@ -125,7 +225,7 @@
             </p>
         </div>
     </section>
-<!--
+    <!--
         <section>
         <div class="research-left-container">
             <input type="text" id="searchInput" placeholder="Buscar receta">
@@ -146,8 +246,8 @@
             </ul>
         </div>
     </footer>
-    
-      <script src="/js/logic-nav.js"></script>
 </body>
+<script src="/js/fucionalidad.js"></script>
+<script src="/js/logic-nav.js"></script>
 
 </html>

@@ -1,69 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Tu arreglo de recetas (debes llenarlo con tus datos reales)
-    const recetas = [
-      {
-        nombre: "Seco de Pollo",
-        tipo: "Plato principal",
-        // Agrega más campos de recetas
-      },
-      {
-        nombre: "Pollo con Champiñones",
-        tipo: "Plato principal",
-      },
+const urlParams = new URLSearchParams(window.location.search)
 
-      {
-        nombre: "Cazuela de Pollo",
-        tipo: "Plato principal",
-      },
+const recipes = localStorage.getItem('recipes') ? JSON.parse(localStorage.getItem('recipes')) : []
+const recipe = recipes.find(recipe => recipe.id === parseInt(urlParams.get('id')))
 
-      {
-        nombre: "Solomillo de Cerdo",
-        tipo: "Plato principal",
-      },
+if (recipes.length === 0 || !recipe) {
+    alert('No existe la receta indicada');
+    window.location.href = 'index.html'
+}
 
-      {
-        nombre: "Carne al horno con papas",
-        tipo: "Plato principal",
-      },
+const title = document.querySelector('#title')
+const descripcion = document.querySelector('#descripcion')
+const pasos = document.querySelector('#pasos')
+const imagen = document.querySelector('#imagen')
 
-      {
-        nombre: "Espaguetti con albondigas de carne",
-        tipo: "Plato principal",
-      },
-      // Agrega más recetas
-    ];
-  
-    const searchInput = document.querySelector(".research-left-container input");
-    const searchResults = document.querySelector(".recipes-container");
-  
-    searchInput.addEventListener("input", function () {
-      const query = searchInput.value.toLowerCase();
-  
-      // Filtrar recetas que coincidan con la búsqueda
-      const matchingRecipes = recetas.filter((receta) =>
-        receta.nombre.toLowerCase().includes(query)
-      );
-  
-      // Mostrar las recetas coincidentes en el HTML
-      displayResults(matchingRecipes);
-    });
-  
-    function displayResults(results) {
-      searchResults.innerHTML = ""; // Limpiar resultados anteriores
-      if (results.length === 0) {
-        searchResults.innerHTML = "<p>No se encontraron recetas.</p>";
-      } else {
-        results.forEach((receta) => {
-          const recipeHTML = `
-            <div class="recipe">
-              <img src="/imagenes/img-recipes/${receta.nombre.replace(/\s/g, '-')}.jpeg" alt="${receta.nombre}"/>
-              <h1>${receta.nombre}</h1>
-              <p>${receta.tipo}</p>
-            </div>
-          `;
-          searchResults.insertAdjacentHTML("beforeend", recipeHTML);
-        });
-      }
-    }
-  });
-  
+imagen.src = recipe.imagen || 'https://picsum.photos/200/100'
+title.innerHTML = recipe.nombre
+descripcion.innerHTML = recipe.descripcion
+pasos.innerHTML = recipe.pasos.split('\n').map(paso => `<li>${paso}</li>`).join('')
