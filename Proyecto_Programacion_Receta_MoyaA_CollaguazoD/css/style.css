@@ -110,4 +110,35 @@
     text-decoration: none;
     color: #000;
 }
+/* Estilos para la sección "about-container" */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 
+  }
+  
+  /* Estilos para la sección "about" */
+  .about {
+    text-align: right;
+    width: 50%;
+  }
+
+  
+  /* Estilos para la imagen en "photo-about-us" */
+  .photo-about-us {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+
+  }
+
+  .photo-about-us img{
+    width: 95%;  
+  }
+  
+  /* Estilos para la sección "join-our-team" */
+
+  
