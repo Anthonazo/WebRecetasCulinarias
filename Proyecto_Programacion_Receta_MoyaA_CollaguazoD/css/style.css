@@ -149,4 +149,43 @@
   
   /* Estilos para la sección "join-our-team" */
 
-  
+/* Estilo para el footer */
+footer {
+    text-align: center; /* Centra todo horizontalmente */
+    background-color: #f4f4f4; /* Color de fondo claro */
+    padding: 20px; /* Espacio interior para separar el contenido de los bordes del footer */
+}
+
+/* Estilo para el contenedor (.media-bar-container) */
+.media-bar-container {
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Agrega espacio entre los elementos */
+}
+
+/* Estilo para el texto "Síguenos en nuestras redes" */
+.text {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+/* Estilo para la lista no ordenada (.media-bar) */
+.media-bar {
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el espacio interior predeterminado de la lista */
+}
+
+/* Estilo para los elementos de lista (<li>) dentro de la .media-bar */
+.media-bar li {
+    display: inline; /* Hace que los elementos de la lista estén en línea horizontalmente */
+    margin: 0 10px; /* Agrega margen horizontal entre los elementos */
+}
+
+/* Estilo para los enlaces dentro de los elementos de lista */
+.media-bar a {
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    font-size: 24px; /* Tamaño de fuente para los íconos */
+}
+
+
