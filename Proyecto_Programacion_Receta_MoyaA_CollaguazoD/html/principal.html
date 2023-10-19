@@ -117,7 +117,7 @@
     <div class="title-init" id="recipes-id">
         <h1>Recetas</h1>
     </div>
-    <div class="recipes-container">
+    <div class="recipes-container" id="food-container">
 
         <div class="recipe">
             <a href="/html/seco-pollo-recipe.html">
@@ -182,7 +182,7 @@
             <p>¡Es tu hora de mostrarnos tus platillos favoritos!</p>
             </p>
         </div>
-        <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+        <form action="procesar_formulario.php" method="post" enctype="multipart/form-data" id="formRecipes">
             <label for="nombre">Nombre de la Receta:</label>
             <input type="text" id="nombre" name="nombre" required class="input-name">
 
@@ -247,7 +247,6 @@
         </div>
     </footer>
 </body>
-<script src="/js/fucionalidad.js"></script>
 <script src="/js/logic-nav.js"></script>
-
+<!-- <script src="/js/fucionalidad.js"></script> -->
 </html>
