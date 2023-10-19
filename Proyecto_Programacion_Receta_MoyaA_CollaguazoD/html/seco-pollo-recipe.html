@@ -47,6 +47,14 @@
             border: 1px solid rgb(189, 189, 189);
         }
 
+        #ingredientes,
+        #pasos {
+            display: flex;
+            text-align: start;
+            flex-direction: column-reverse;
+            line-height: 1.5;
+        }
+
         .ingredientes li {
             list-style: none;
         }
@@ -74,58 +82,23 @@
 
 <body>
     <div class="portada">
-        <img src="/imagenes/img-recipes/seco-pollo.jpg" alt="">
+        <img src="" id="imagen">
         <div>
-            <h1>Seco de pollo</h1>
+            <h1 id="title"></h1>
         </div>
 
     </div>
 
     <div class="ingredientes">
         <h1 class="title">Ingredientes</h1>
-        <ul>
-            <li>Arroz</li>
-            <li>5 piezas de pollo variadas</li>
-            <li>2 Cucharaditas Comino Molido</li>
-            <li>2 cucharaditas de Achiote en polvo</li>
-            <li>3 cucharadas de Aceite vegetal</li>
-            <li>2 Unidades de Pimiento Rojo, picado en cubos</li>
-            <li>1 Cebolla perla mediana, picada en cubos</li>
-            <li>2 Tomates, pelados y cortados en rodajas</li>
-            <li>5 dientes de Ajo machacados</li>
-            <li>2 Cubos Caldo De Gallina Maggi</li>
-            <li>1 Cucharada Cilantro, picado</li>
-            <li>2 Tazas de Cerveza Rubia</li>
-            <li>3/4 de Taza de Jugo de Naranjilla</li>
-            <li>1 Aji Criollo</li>
-            <li>1/4 Taza Cilantro</li>
-            <li>1/4 Taza Perejil Fresco</li>
-            <li>2 Cucharaditas Orégano seco NATURE'S HEART®</li>
-            <li>Sal y pimienta al gusto</li>
-        </ul>
+        <p id="descripcion" style="margin-bottom: 15px;"></p>
     </div>
 
     <div class="preparacion">
         <h1 class="title">Preparación</h1>
-        <ol>
-            <li>
-                Sazona las piezas de pollo con el comino, el achiote y sal y pimienta.
-            </li>
-            <li>
-                Coloca en la licuadora, la cerveza, jugo de naranjilla, cebolla, ajo, tomate, pimiento, aji,
-                cilantro, perejil y orégano, de estos últimos 3 reserva un poco para la presentación final. Reserva
-            </li>
-            <li>
-                En una olla amplia coloca el aceite y caliéntalo, una vez caliente coloca las piezas de pollo a dorar
-                una vez dorado agrega la salsa de la licuadora y lleva a hervir. Una vez hirviendo,
-                agrega los cubos de Caldo de Gallina MAGGI®, baja el fuego y cocina lentamente durante 45 minutos.
-            </li>
-            <li>
-                La salsa de estar espesa y la carne de pollo muy tierna. Agrega el sobrante de cilantro,
-                perejil y orégano y sirve acompañando de arroz amarillo, maduros fritos y aguacate.
-            </li>
-        </ol>
+        <p id="pasos"></p>
     </div>
 </body>
+<script src="/js/ver-receta.js"></script>
 
 </html>

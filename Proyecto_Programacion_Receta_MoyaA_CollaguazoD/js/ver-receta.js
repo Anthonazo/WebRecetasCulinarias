@@ -1,11 +1,12 @@
 const urlParams = new URLSearchParams(window.location.search)
 
-const recipes = localStorage.getItem('recipes') ? JSON.parse(localStorage.getItem('recipes')) : []
-const recipe = recipes.find(recipe => recipe.id === parseInt(urlParams.get('id')))
+const recipes = localStorage.getItem('recetas') ? JSON.parse(localStorage.getItem('recetas')) : []
+console.log("recetas", recipes);
+const recipe = recipes.find(recipe => recipe.identificador === parseInt(urlParams.get('id')))
 
 if (recipes.length === 0 || !recipe) {
     alert('No existe la receta indicada');
-    window.location.href = 'index.html'
+    // window.location.href = 'index.html'
 }
 
 const title = document.querySelector('#title')
@@ -15,5 +16,5 @@ const imagen = document.querySelector('#imagen')
 
 imagen.src = recipe.imagen || 'https://picsum.photos/200/100'
 title.innerHTML = recipe.nombre
-descripcion.innerHTML = recipe.descripcion
-pasos.innerHTML = recipe.pasos.split('\n').map(paso => `<li>${paso}</li>`).join('')
+descripcion.innerHTML = recipe.ingredientes.split('\n').map(paso => `<li>${paso}</li>`).join('')
+pasos.innerHTML = recipe.preparacion.split('\n').map(paso => `<li>${paso}</li>`).join('')

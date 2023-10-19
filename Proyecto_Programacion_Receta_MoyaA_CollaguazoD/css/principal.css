@@ -11,6 +11,7 @@
     overflow: hidden;
     height: 420px;
     padding-top: 70px;
+
 }
 #id-fond1, #id-fond2, #id-fond3, #id-fond4{
     background-image: url(/imagenes/cuy.jpg);
@@ -73,6 +74,9 @@
 .title-init {
     margin-left: 10px;
     color: #ffe600;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
 }
 .recipes-container {
     width: 100%;
@@ -136,6 +140,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
 }
 .form-container .uno {
     width: 50%;
